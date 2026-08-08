@@ -96,3 +96,4 @@ Bạn hãy nhập các câu này vào Tab "So Sánh Retrieval" trên Streamlit �
 - **B. Paraphrase semantic:** `Khách hàng gặp khó khăn có thể được điều chỉnh kỳ hạn trả nợ ra sao?` (Kỳ vọng: Semantic bắt được ý định dù khác từ vựng).
 - **C. Multi-concept:** `Phân loại nợ và trích lập dự phòng được thực hiện như thế nào?` (Kỳ vọng: Hybrid gom đủ các nhánh).
 - **D. Out-of-scope:** `Ngân hàng nào có lãi suất tiết kiệm cao nhất hôm nay?` (Kỳ vọng: Toàn bộ bị Block bởi Gating threshold, không sinh ảo giác).
+<img width="944" height="413" alt="Bài tập thực hành buổi 8" src="https://github.com/user-attachments/assets/12cf122f-aa19-45d6-9ea2-8bfe2cba52f8" />
