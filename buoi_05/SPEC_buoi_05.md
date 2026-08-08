@@ -4,4 +4,4 @@
 - **Semantic:** ưu tiên ranh giới đoạn văn thường ngắt như ngắt đoạn, kết đoạn, cách dòng.
 - **Hierarchical:** chia theo cấu trúc mà mỗi Chương → Mục → Điều/Khoản → Điểm sẽ thành mốc bắt đầu của 1 chunk
 Nêu việc cần sử dụng key trong .env thuộc folder src nhưng không được phép đọc giá trị của các key.
-SPEC cũng phải quy định không tạo embedding, không lưu vector database và không gọi LLM trong Buổi 5, code ở mức demo đơn giản không phức tạp hóa, không bỏ sót yêu cầu.
+SPEC cũng phải quy định không tạo embedding, không lưu vector database và không gọi LLM trong Buổi 5, code ở mức demo đơn giản không phức tạp hóa, không bỏ sót yêu cầu.<img width="1913" height="1010" alt="bài tập buổi 5" src="https://github.com/user-attachments/assets/8abb3823-5bae-44ad-be3e-f0c62bfd9e8f" />
