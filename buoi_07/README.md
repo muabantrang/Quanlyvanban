@@ -170,3 +170,4 @@ C. Ngoài phạm vi:
 `python rag.py query --strategy hierarchical --question "Ngân hàng nào có lãi suất tiết kiệm cao nhất hôm nay?"`
 Kỳ vọng mong muốn cho C: 
 - Ứng dụng trả về `Không tìm thấy đủ thông tin liên quan trong tài liệu đã cung cấp.` do evidence bị chặn bởi threshold, LLM generation không được kích hoạt. Không bịa đặt tên ngân hàng. (Lưu ý: đây là kỳ vọng, cần hiệu chỉnh RAG_MAX_DISTANCE thực tế nếu xảy ra false positive).
+<img width="2560" height="1180" alt="Thực hành buổi 7" src="https://github.com/user-attachments/assets/dd45ac49-43f7-441c-8632-88b516db2364" />
