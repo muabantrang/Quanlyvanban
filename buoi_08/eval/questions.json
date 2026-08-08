@@ -2,56 +2,80 @@
   {
     "query_id": "Q01",
     "question": "Quy định này áp dụng cho những hoạt động nào của ngân hàng?",
-    "relevant_chunk_ids": ["CHK_01"],
+    "relevant_chunk_ids": [
+      "TT_39_2016_NHNN.pdf::hierarchical::0039",
+      "TT_39_2016_NHNN.pdf::hierarchical::0002"
+    ],
     "scope": "in_scope",
     "needs_human_review": true
   },
   {
     "query_id": "Q02",
     "question": "Thế nào là cấp tín dụng theo giải thích pháp lý?",
-    "relevant_chunk_ids": ["CHK_02"],
+    "relevant_chunk_ids": [
+      "TT_39_2016_NHNN.pdf::hierarchical::0005",
+      "TT_39_2016_NHNN.pdf::hierarchical::0032"
+    ],
     "scope": "in_scope",
     "needs_human_review": true
   },
   {
     "query_id": "Q03",
     "question": "Để được giải ngân vốn, khách hàng cần chuẩn bị những tài sản gì?",
-    "relevant_chunk_ids": ["CHK_03", "CHK_04"],
+    "relevant_chunk_ids": [
+      "TT_39_2016_NHNN.pdf::hierarchical::0167",
+      "TT_39_2016_NHNN.pdf::hierarchical::0147"
+    ],
     "scope": "in_scope",
     "needs_human_review": true
   },
   {
     "query_id": "Q04",
     "question": "Rủi ro tín dụng phát sinh trong trường hợp nào?",
-    "relevant_chunk_ids": ["CHK_05"],
+    "relevant_chunk_ids": [
+      "TT_39_2016_NHNN.pdf::hierarchical::0135",
+      "TT_06_2023_NHNN.pdf::hierarchical::0050"
+    ],
     "scope": "in_scope",
     "needs_human_review": true
   },
   {
     "query_id": "Q05",
     "question": "Ngân hàng có thể làm gì nếu khách hàng vi phạm hợp đồng vay vốn?",
-    "relevant_chunk_ids": ["CHK_06"],
+    "relevant_chunk_ids": [
+      "TT_39_2016_NHNN.pdf::hierarchical::0164",
+      "TT_39_2016_NHNN.pdf::hierarchical::0163"
+    ],
     "scope": "in_scope",
     "needs_human_review": true
   },
   {
     "query_id": "Q06",
     "question": "Thời gian tối thiểu để lưu trữ hồ sơ liên quan đến vay vốn là bao lâu?",
-    "relevant_chunk_ids": ["CHK_07"],
+    "relevant_chunk_ids": [
+      "TT_39_2016_NHNN.pdf::hierarchical::0213",
+      "TT_39_2016_NHNN.pdf::hierarchical::0197"
+    ],
     "scope": "in_scope",
     "needs_human_review": true
   },
   {
     "query_id": "Q07",
     "question": "Quy định pháp lý về bảo quản hồ sơ trong hoạt động chiết khấu, bảo lãnh được quy định ra sao?",
-    "relevant_chunk_ids": ["CHK_01", "CHK_07"],
+    "relevant_chunk_ids": [
+      "TT_06_2023_NHNN.pdf::hierarchical::0043",
+      "TT_39_2016_NHNN.pdf::hierarchical::0194"
+    ],
     "scope": "in_scope",
     "needs_human_review": true
   },
   {
     "query_id": "Q08",
     "question": "Công thức để nấu món phở truyền thống yêu cầu những nguyên liệu gì?",
-    "relevant_chunk_ids": ["CHK_08"],
+    "relevant_chunk_ids": [
+      "TT_06_2023_NHNN.pdf::hierarchical::0045",
+      "TT_06_2023_NHNN.pdf::hierarchical::0051"
+    ],
     "scope": "out_of_scope",
     "needs_human_review": true
   }

@@ -71,6 +71,22 @@ def evaluate(questions_file: Path, strategy: str, k: int, config: dict, mock_dep
     
     has_errors = False
     
+    # Check intersection first
+    gold_ids = set()
+    for q in questions:
+        gold_ids.update(q.get("relevant_chunk_ids", []))
+    
+    corpus_ids = set([c["chunk_id"] for c in chunks])
+    intersection = gold_ids.intersection(corpus_ids)
+    
+    if len(intersection) == 0:
+        print(f"\n[LỖI NGHIÊM TRỌNG] Nhãn dữ liệu (Gold labels) lệch corpus!")
+        print(f"- Các nhãn trong questions.json (VD: {list(gold_ids)[:3]}) không tồn tại trong corpus hiện tại.")
+        print(f"- Corpus hiện tại dùng ID theo định dạng (VD: {list(corpus_ids)[:3]}).")
+        print("\nHƯỚNG GIẢI QUYẾT:")
+        print("1. Chạy đánh giá trên đúng corpus ban đầu của bộ câu hỏi.")
+        print("2. Hoặc cập nhật lại trường 'relevant_chunk_ids' trong questions.json cho khớp với corpus hiện tại (kèm needs_human_review = true).")
+        
     for q in questions:
         query_text = q.get("question")
         relevant_ids = q.get("relevant_chunk_ids", [])
@@ -108,9 +124,9 @@ def evaluate(questions_file: Path, strategy: str, k: int, config: dict, mock_dep
         p50_lat = lats[len(lats)//2] if lats else 0.0
         
         metrics_summary[m] = {
-            "Recall@K": results[m]["recall"] / num_q,
-            "MRR@K": results[m]["mrr"] / num_q,
-            "nDCG@K": results[m]["ndcg"] / num_q,
+            "Recall@K": results[m]["recall"] / num_q if num_q > 0 else 0,
+            "MRR@K": results[m]["mrr"] / num_q if num_q > 0 else 0,
+            "nDCG@K": results[m]["ndcg"] / num_q if num_q > 0 else 0,
             "latency_mean_ms": mean_lat,
             "latency_p50_ms": p50_lat
         }
@@ -149,6 +165,9 @@ def main():
     try:
         report = evaluate(eval_path, args.strategy, args.k, config)
         
+        if report.get("error_msg"):
+            sys.exit(1)
+            
         reports_dir = base_dir / "reports"
         reports_dir.mkdir(exist_ok=True)
         report_file = reports_dir / "report.json"
@@ -163,11 +182,12 @@ def main():
             print("These metrics are for reference only.")
             
         import pandas as pd
-        df = pd.DataFrame(report["metrics"]).T
-        print("\n[METRICS]")
-        print(df.to_string())
+        if report.get("metrics"):
+            df = pd.DataFrame(report["metrics"]).T
+            print("\n[METRICS]")
+            print(df.to_string())
         
-        if report["has_errors"]:
+        if report.get("has_errors"):
             print("\nWARNING: Some queries failed during execution, see logs above.")
             
     except Exception as e:

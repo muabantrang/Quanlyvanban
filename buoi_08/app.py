@@ -306,13 +306,17 @@ with tab4:
                 
             st.success("Đã tìm thấy báo cáo đánh giá.")
             
-            if "metrics" in rep:
-                st.dataframe(pd.DataFrame(rep["metrics"]).T)
+            if rep.get("has_errors") and not rep.get("metrics"):
+                st.error(f"Lỗi: {rep.get('error_msg', 'Không nạp được dữ liệu hoặc các truy vấn đều thất bại.')}")
             else:
-                st.json(rep)
-                
-            if rep.get("needs_human_review", False):
-                st.warning("Cảnh báo: Dữ liệu Ground Truth cần con người kiểm tra (needs_human_review = true)")
+                if "metrics" in rep and rep["metrics"]:
+                    st.dataframe(pd.DataFrame(rep["metrics"]).T)
+                else:
+                    st.warning("Báo cáo tồn tại nhưng không có dữ liệu đánh giá hợp lệ.")
+                    st.json(rep)
+                    
+                if rep.get("needs_human_review", False):
+                    st.warning("Cảnh báo: Dữ liệu Ground Truth cần con người kiểm tra (needs_human_review = true)")
                 
         except Exception as e:
             st.error(f"Lỗi đọc report: {e}")
