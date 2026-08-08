@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "CHK_01",
+    "strategy": "semantic",
+    "source": "Quy_dinh_Tin_dung.pdf",
+    "page_start": 1,
+    "page_end": 1,
+    "text": "Điều 1. Phạm vi điều chỉnh. Quy định này áp dụng đối với các hoạt động cấp tín dụng, bảo lãnh và chiết khấu tại tổ chức tín dụng."
+  },
+  {
+    "chunk_id": "CHK_02",
+    "strategy": "semantic",
+    "source": "Quy_dinh_Tin_dung.pdf",
+    "page_start": 1,
+    "page_end": 1,
+    "text": "Điều 2. Giải thích từ ngữ pháp lý. Trong Quy định này, cấp tín dụng được hiểu là việc thỏa thuận để tổ chức, cá nhân sử dụng một khoản tiền."
+  },
+  {
+    "chunk_id": "CHK_03",
+    "strategy": "semantic",
+    "source": "Quy_dinh_Tin_dung.pdf",
+    "page_start": 2,
+    "page_end": 2,
+    "text": "Khoản 1 Điều 3. Yêu cầu về tài sản đảm bảo. Người vay phải có tài sản thế chấp hợp lệ để vay tiền từ ngân hàng thương mại."
+  },
+  {
+    "chunk_id": "CHK_04",
+    "strategy": "semantic",
+    "source": "Quy_dinh_Tin_dung.pdf",
+    "page_start": 2,
+    "page_end": 2,
+    "text": "Khoản 2 Điều 3. Yêu cầu về vật bảo chứng. Khách hàng cần cung cấp vật cầm cố đúng chuẩn nhằm nhận khoản cấp vốn từ định chế tài chính."
+  },
+  {
+    "chunk_id": "CHK_05",
+    "strategy": "semantic",
+    "source": "Quy_dinh_Tin_dung.pdf",
+    "page_start": 3,
+    "page_end": 3,
+    "text": "Khoản 1 Điều 4. Rủi ro tín dụng. Đây là các rủi ro phát sinh khi khách hàng không thực hiện đúng thỏa thuận trong hợp đồng cấp tín dụng."
+  },
+  {
+    "chunk_id": "CHK_06",
+    "strategy": "semantic",
+    "source": "Quy_dinh_Tin_dung.pdf",
+    "page_start": 3,
+    "page_end": 4,
+    "text": "Khoản 2 Điều 4. Xử lý vi phạm hợp đồng cấp tín dụng. Tổ chức tín dụng có quyền thu hồi tài sản thế chấp hoặc khởi kiện ra tòa án."
+  },
+  {
+    "chunk_id": "CHK_07",
+    "strategy": "semantic",
+    "source": "Quy_dinh_Tin_dung.pdf",
+    "page_start": 4,
+    "page_end": 4,
+    "text": "Điều 5. Lưu trữ hồ sơ tín dụng. Mọi hồ sơ liên quan đến việc cấp tín dụng phải được bảo quản an toàn trong ít nhất 10 năm theo quy định pháp lý."
+  },
+  {
+    "chunk_id": "CHK_08",
+    "strategy": "semantic",
+    "source": "Huong_dan_nau_an.pdf",
+    "page_start": 1,
+    "page_end": 1,
+    "text": "Điều 1. Công thức làm bánh phở truyền thống. Cần chuẩn bị bột gạo, nước sạch và muối. Tráng mỏng bột trên nồi hơi nung bằng than củi."
+  }
+]
