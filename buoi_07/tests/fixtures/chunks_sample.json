@@ -1,0 +1,42 @@
+[
+  {
+    "chunk_id": "c1",
+    "strategy": "hierarchical",
+    "source": "doc1.pdf",
+    "page_start": 1,
+    "page_end": 1,
+    "text": "Parent chunk content"
+  },
+  {
+    "chunk_id": "c2",
+    "strategy": "hierarchical",
+    "source": "doc1.pdf",
+    "page_start": 1,
+    "page_end": 1,
+    "text": "Child chunk 1 content"
+  },
+  {
+    "chunk_id": "c3",
+    "strategy": "hierarchical",
+    "source": "doc1.pdf",
+    "page_start": 2,
+    "page_end": 2,
+    "text": "Child chunk 2 content"
+  },
+  {
+    "chunk_id": "c4",
+    "strategy": "semantic",
+    "source": "doc2.pdf",
+    "page_start": 3,
+    "page_end": 3,
+    "text": "Semantic chunk content"
+  },
+  {
+    "chunk_id": "c5",
+    "strategy": "fixed-size",
+    "source": "doc3.pdf",
+    "page_start": 4,
+    "page_end": 5,
+    "text": "Fixed size chunk spanning pages 4 and 5"
+  }
+]
