@@ -1697,3 +1697,5 @@ Gate cuối vẫn phải chặn generation khi không đủ evidence.
   https://arxiv.org/abs/1708.00247
 - BGE multilingual reranker:
   https://huggingface.co/BAAI/bge-reranker-v2-m3
+<img width="944" height="380" alt="Bài tập thực hành buổi 9" src="https://github.com/user-attachments/assets/cda6d305-ebf1-49ab-8fd5-bbe662a343c3" />
+
